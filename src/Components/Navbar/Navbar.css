@@ -1,0 +1,14 @@
+.navbar a{
+    color: white;
+}
+a:hover{
+    text-decoration: dashed;
+}
+.navbar{
+    border-radius: 45px;
+    width: 25px;
+}
+.bg-active{
+    background: rgb(224,132,223);
+    background: linear-gradient(90deg, rgba(224,132,223,1) 0%, rgba(178,51,176,1) 33%, rgba(239,23,160,1) 66%, rgba(0,212,255,1) 99%);
+}

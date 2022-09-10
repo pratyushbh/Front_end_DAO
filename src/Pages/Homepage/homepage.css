@@ -1,0 +1,14 @@
+.Homepage{
+    margin: 0;
+    border: 0;
+    text-align:left;
+    background-color: purple;
+}
+.Header {
+    color: white;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+.nav{
+    position: absolute;
+}

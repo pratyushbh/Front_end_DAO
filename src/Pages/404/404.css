@@ -1,0 +1,21 @@
+.container{
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+}
+.App-logo {
+    top:72vh;
+    left:58vw;
+}
+.Error_404_heading h1{
+    font-size: 70px;
+    margin-bottom: 5vh;
+}
+.statement_404{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}
+.Error_404_logo{
+    width:60vh;
+    height: 60vh;
+  }

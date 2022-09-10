@@ -1,0 +1,17 @@
+.container{
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+.App-logo {
+    top:72vh;
+    left:58vw;
+}
+.under_work_heading{
+    font-size: 70px;
+    margin-bottom: 5vh;
+}
+.statement{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+}

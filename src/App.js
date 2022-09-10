@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import {Navbar,Footer,Underwork} from './Components/index';
+import Error_404 from './Pages/404/404';
+import Homepage from './Pages/Homepage/homepage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Homepage/>
     </div>
   );
 }
