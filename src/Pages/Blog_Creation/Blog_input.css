@@ -1,0 +1,21 @@
+.form{
+    justify-content:flex-start;
+}
+Form{
+    margin-top:5vh;
+}
+input{
+    border:none;
+    background:white;
+}
+.Title{
+    font-size:10vh;
+    margin-bottom:5vh;
+}
+.User,.img{
+    margin-bottom:5vh;
+}
+.content{
+    font-size:5vh;
+    margin-bottom:5vh;
+}

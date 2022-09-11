@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "./FS_Navbar.css"
 
 const FS_Navbar = () => {
@@ -16,19 +17,19 @@ const FS_Navbar = () => {
             </div>
             <div className='links'>
                 <div className='link'>
-                    <a href='#'>Homepage</a>
+                    <Link to="/">Homepage</Link>
                 </div>
                 <div className='link'>
-                    <a href='#'>Treasury</a>
+                    <Link to="/treasury">Treasury</Link>
                 </div>
                 <div className='link'>
-                    <a href='#'>Proposal</a>
+                    <Link to="/proposals">Proposal</Link>
                 </div>
                 <div className='link'>
-                    <a href='#'>Blogs</a>
+                    <Link to="/Content/Podcast">podcast</Link>
                 </div>
                 <div className='link'>
-                    <a href='#'>Podcasts</a>
+                    <Link to="/Content/Blog">Blog</Link>
                 </div>
             </div>
         </div>
