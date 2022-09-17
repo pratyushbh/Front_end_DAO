@@ -1,0 +1,92 @@
+#wrapper{
+    position:relative;
+    border-radius: 45px;
+    width:70%;
+    top:15%;
+    left:17%;
+    min-height: 35vw;
+    overflow: hidden;
+}
+.layer .img_1{
+    position: absolute;
+    width:30%;
+    top:50%;
+    left:20%;
+    transform: translate(-50%,-50%);
+}
+.layer .img_2{
+    position: absolute;
+    width:30%;
+    top:50%;
+    left:55%;
+    transform: translate(-50%,-50%);
+}
+.layer{
+    position: absolute;
+    width:100vw;
+    min-height: 40vw;
+    overflow: hidden;
+}
+.layer .content-wrap{
+    position: absolute;
+    width:100vw;
+    min-height: 40vw;
+}
+.layer .content-body{
+    width: 25%;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.layer h1{
+    font-size: 2em;
+}
+.bottom{
+    
+    background:linear-gradient(30deg,#37044e,#db95c6);
+    z-index: 1;
+}
+.bottom .content-body{
+    background: -webkit-linear-gradient(right,#f1a7f1,#fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-items: center;
+    right: 20%;
+}
+.top{
+    background:linear-gradient(30deg,#9f98e8,#aff6cf);
+    z-index: 2;
+    width: 50vw;
+}
+.top .content-body{
+    background: -webkit-linear-gradient(right,#37044e,#db95c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left:23%
+}
+.handle{
+    background-color: white;
+    position: absolute;
+    height:100%;
+    display: block;
+    width: 1.5vw;
+    top:0;
+    left:50%;
+    z-index: 3;
+}
+.skewed .handle{
+    top:50%;
+    transform: rotate(30deg) translateY(-50%);
+    height: 200%;
+    transform-origin: top;
+}
+.skewed .top{
+    transform: skew(-30deg);
+    margin-left: -1000px;
+    width:calc(50vw +1000px);
+}
+.skewed .top .content-wrap{
+    transform: skew(30deg);
+    margin-left: 1000px;
+}

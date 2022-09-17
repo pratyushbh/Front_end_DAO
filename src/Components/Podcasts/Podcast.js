@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Podcast.css';
+import { motion } from 'framer-motion';
 import { Container,InputGroup,FormControl,Button,Row,Card, Col } from 'react-bootstrap';
 import { useState,useEffect } from 'react';
 
@@ -47,14 +48,17 @@ function Podcast() {
     <div className="App">
       <Container>
       <div className="d-flex justify-content-center">
+      <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
       <Link to="/Content/Podcast"><button className="btn btn-outline-success me-2" type="button">Podcast</button></Link>
       <Link to="/Content/Blog"><button className="btn btn-outline-success me-2" type="button">Blogs</button></Link>
+      </motion.div>
       </div>
       </Container>
       <Container>
         <Row className="mx-2 row row-cols-4">
         {data.map((podcast)=>{
           return(
+            <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
             <Col>
             <a className="podcast_link" href={podcast.external_urls.spotify}>
             <Card>
@@ -66,6 +70,7 @@ function Podcast() {
           </Card>
           </a>
           </Col>
+          </motion.div>
           )
         })}
         </Row>

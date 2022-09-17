@@ -1,65 +1,68 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react';
 import FS_Navbar from '../../Components/FullScreen_navbar/FS_Navbar'
-import { Footer } from '../../Components'
+import { motion,useInView } from 'framer-motion'
 import Blog_homepage from '../../assets/Blog_Homepage.png'
 import Podcast_homepage from '../../assets/PodCast_Homepage.png'
 import Treasury_homepage from '../../assets/Treasury.png'
 import './homepage.css'
+import particlesOptions from "../../particles.json";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import Content from '../../Components/contentSection/content';
+import Horizontal from '../../Components/HorizontalScroll/HorizontalScroll';
+import SS from '../../Components/solar-system/SS';
+import { Footer } from '../../Components';
+
+
 
 const Homepage = () => {
+  const particlesInit = useCallback(main => {
+    loadFull(main);
+}, [])
+  const [event,setEvent]=useState();
   return (
-    <div className='bg-dark Homepage'>
+    <div className='Homepage' onWheel={(e)=>{console.log(window.pageXOffset)}}>
+            <Particles options={particlesOptions} init={particlesInit}/>
         <div className='nav'>
           <FS_Navbar/>
         </div>
-        <div className='Intro'>
-        <div class=" row">
-            <div class="col">
-              <h2>LEARN BUILD WORK TECH</h2>
-              <h6>Introduction</h6>
-            </div>
-            <div class="col-md-auto">
-              <h1>DEEP</h1>
-              <h1>VERSE</h1>
-            </div>
-          </div>
-        </div>
-        <div className='MainContent'>
-          <div className='Blog bg-light'>
+        <Horizontal/>
+        {/* <div className='MainContent'>
+          <div className='Blog'>
             <div className='row'>
             <div className='col'>
               <div className="Blog_Content">
-                <h2>Exclusive Blogs</h2>
-                <h6>Since We are a DAO that educate people about web3 we publish Exclusive Blogs on our website, You can check them on the Content Page of the Site</h6>
+              <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
+              </motion.div>
               </div>
               </div>
               <div className='col'>
+              <motion.div transition={{delay:0.4}}  initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
                 <div><img  className="Homepage_img" src={Blog_homepage} alt="Blog_homepage"/></div>
+              </motion.div>
               </div>
             </div>
           </div>
-            <div className='Podcast bg-black'>
-            <div className='row'>
-              <div className='col'>
-                <div><img  className="Homepage_img" src={Podcast_homepage} alt="Blog_homepage"/></div>
-              </div>
-            <div className='col'>
-              <div className="Podcast_Content">
-                <h2>Podcast</h2>
-                <h6>Get Access to our Podcast and get up to date infos</h6>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div className='Treasury bg-light'>  
+          <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
+           <Content/>
+          </motion.div>
+          <div className='Treasury'>  
             <div className="Treasury_Content">
+            <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
                 <h2>Treasury</h2>
                 <h6>Treasury Info</h6>
+            </motion.div>
             </div>
-            <div><img  className="Homepage_img" src={Treasury_homepage} alt="Blog_homepage"/></div>
+            <div>
+            <motion.div  transition={{delay:0.4}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
+              <img  className="Homepage_img" src={Treasury_homepage} alt="Blog_homepage"/>
+            </motion.div>
+            </div>
           </div>
           </div>
-        </div>
+          */}
+          <Footer/>
+        </div> 
   )
 }
 

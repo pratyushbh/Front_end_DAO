@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+.footer{
+    display: flex;
+    font-family: 'Antonio', sans-serif;
+    color:white;
+}
+.footer h2{
+    padding-top: 2vh;
+    padding-left: 6vw;
+}
+.divider{
+    width: 90%;
+    position: absolute;
+    margin-left: 5%;
+    height: 0.5vh;
+    
+    background-color: white;
+}
+.icons{
+    margin-left: 2vw;
+    display: flex;
+}
+.icon{
+    height: 10vh;
+    width: 5vw;
+}

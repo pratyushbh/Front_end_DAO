@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Blog.css';
 import { Container,InputGroup,FormControl,Button,Row,Card, Col } from 'react-bootstrap';
@@ -27,14 +28,18 @@ async function getBlog(){
     <div className="App">
       <Container>
       <div className="d-flex justify-content-center">
+      <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
       <button className="btn btn-outline-success me-2" type="button">Podcast</button>
       <button className="btn btn-outline-success me-2" type="button">Blogs</button>
+      </motion.div>
       </div>
       </Container>
       <Container>
         <Row className="mx-2 row row-cols-4">
         {data.map((blog)=>{
           return(
+            <motion.div  transition={{delay:0.2}} initial={{ opacity: 0, translateY:-20}} whileInView={{ opacity: 1 ,translateY:0}}  viewport={{ once: true }}>
+            
             <Col>
             <a className="podcast_link">
             <Card>
@@ -46,6 +51,7 @@ async function getBlog(){
           </Card>
           </a>
           </Col>
+          </motion.div>
           )
         })}
         </Row>

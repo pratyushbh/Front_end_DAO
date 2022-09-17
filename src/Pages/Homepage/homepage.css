@@ -1,25 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 .Homepage{
     margin: 0;
     border: 0;
     text-align:left;
-    background-color: purple;
+    background-color: transparent
 }
 .Intro .row{
     color: white;
-    height:100%;
-    padding-top:15%;
+    height:90%;
+    padding-top:0%;
     padding-left:10%;
-    padding-bottom:15%;
+    padding-bottom:10%;
     padding-right:10%;
 }
+.Introduction_section{
+    display: flex;
+}
+.Introduction_section .banner{
+    height: 5vh;
+    background-color: #ff00ff;
+    width: 0.5vw;
+}
+.Introduction_section .anim{
+    padding-top: 3%;
+    padding-right: 5%;
+}
+.Introduction_section .Content_part{
+    padding-top: 15%;
+    padding-left: 3%;
+    color:white
+}
+.cards{
+    margin-top: 3%;
+    display: flex;
+    gap: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.Card-1{
+    margin-top:6vh;
+    width: 25vw;
+    height:60vh;
+    padding-top:10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    border-radius: 45px;
+    background:linear-gradient(30deg,#9f98e8,#aff6cf);
+    color: white;
+}
+.Card-1 h1{
+    margin-left: -15vw;
+    margin-bottom: 15%;
+    font-size: 8vh;
+}
+.Card-1 h2{
+    font-size: 3vh;
+}
+.Card-2{
+    width: 45vw;
+    height:60vh;
+    margin-top:-6vh;
+    width: 25vw;
+    padding-top:10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    border-radius: 45px;
+    background:linear-gradient(30deg,#5f0a87,#A4508B);
+    color: white;
+}
+.Card-2 h1{
+    margin-left: -15vw;
+    margin-bottom: 15%;
+    font-size: 8vh;
+}
+.Card-2 h2{
+    font-size: 3vh;
+}
+.Card-3{
+    width: 25vw;
+    margin-top:0vh;
+    height:60vh;
+    padding-top:10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    border-radius: 45px;
+    background:linear-gradient(30deg,#ffa69e,#861657);
+    color: white;
+}
+.Card-3 h1{
+    padding-left: 0vw;
+    margin-bottom: 15%;
+    font-size: 8vh;
+}
+.Card-3 h2{
+    font-size: 3vh;
+}
+
+.Offering h1{
+    color: #fff;
+    margin-left:5%;
+    margin-top: 2%;
+}
+.Content_div{
+color: white;
+display: block;
+margin-top: 0%;
+margin-left: 34%;
+margin-bottom: 3%;
+align-content: center;
+}
+.Content_div h1{
+    margin-left: 10%;
+    }
+.Introduction_section .Content_part .aim_banner{
+    padding-top: 1%;
+    display: flex;
+    color:white
+}
+.Introduction_section .Content_part .aim_banner .aim{
+    display: flex;
+    background: -webkit-linear-gradient(left, rgba(255,000,255,1) 0%,rgba(255,255,255,0) 100%);
+    padding-top: 0.7%;
+    padding-left: 1%;
+    color:white
+}
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+    height: 100%;
+    background-color: #0d47a1;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
 .Intro .row h2{
-    padding-top:25%;
+    font-family: 'Bungee Outline', cursive;
+    font-size: 2.2rem;
+    padding-top:45%;
 }
 .Intro .row h1{
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-    color:transparent;
-    font-size:10rem;
+    font-family: 'Antonio', sans-serif;
+    font-size:15rem;
     text-align:center;
 }
 .nav{

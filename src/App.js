@@ -2,7 +2,7 @@ import './App.css';
 import {Navbar,Footer,Underwork} from './Components/index';
 import Error_404 from './Pages/404/404';
 import Homepage from './Pages/Homepage/homepage';
-import {Route, Routes} from 'react-router'
+import {Route, Routes} from 'react-router';
 import Blog from './Components/Blog/Blog';
 import { BrowserRouter } from 'react-router-dom';
 import Proposal from './Pages/Proposal/Proposal';
@@ -13,7 +13,7 @@ import Podcast from './Components/Podcasts/Podcast';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/Content/Blog" element={<><Navbar/><Blog/></>}/>
@@ -24,7 +24,6 @@ function App() {
           <Route path="*" element={<Error_404/>}/>
         </Routes>
       </BrowserRouter>
-      <Footer/>
     </div>
   );
 }
